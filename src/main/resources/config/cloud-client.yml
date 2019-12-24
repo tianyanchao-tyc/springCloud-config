@@ -1,0 +1,25 @@
+
+spring:
+  application:
+    name: config-service
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://180.76.116.172:3306/mysql?useUnicode=true&characterEncoding=utf8&useSSL=true&autoReconnect=true
+    username: root
+    password: TYC-MYSQL
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://180.76.116.172:8091/eureka
+
+
+

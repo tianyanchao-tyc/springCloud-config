@@ -1,0 +1,21 @@
+server:
+  port: 8092
+
+
+
+spring:
+  application:
+    name: config-service
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://180.76.116.172:8091/eureka
+
